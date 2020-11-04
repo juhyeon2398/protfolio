@@ -1,0 +1,403 @@
+@import "_vars";
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  overflow: hidden;
+  .computer {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 1s ease;
+    background: url("../image/bg01.jpg") no-repeat 50% 100%;
+    background-size: cover;
+    .inner {
+      display: block;
+      height: 100%;
+      .iconList {
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 5%;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        font-weight: 700;
+        li {
+          margin-bottom: 50px;
+          color: #fff;
+          span {
+            margin-top: 10px;
+            display: block;
+          }
+
+          .imgBox {
+            widows: 95px;
+            height: 50px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .info {
+        display: none;
+        width: 50%;
+        height: 60%;
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        z-index: 90;
+        overflow: hidden;
+        border: 1px solid #000;
+        border-radius: 10px 10px 0 0;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+        &.active {
+          display: block;
+        }
+        &.info01 {
+          .contentBox {
+            position: relative;
+            overflow: scroll;
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            background-color: rgb(231, 211, 29);
+            .content {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              .photo {
+                width: 400px;
+                height: 400px;
+                border-radius: 100%;
+                border: 1px solid #000;
+                overflow: hidden;
+                float: left;
+                background-color: #fff;
+                img {
+                  display: block;
+                  margin: 0px auto;
+                  width: 80%;
+                }
+              }
+              .txt {
+                left: 125%;
+                width: 100%;
+                line-height: 1.5;
+                font-size: 1.25rem;
+                font-weight: 700;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                h2{
+                  font-size: 1.5rem;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+        &.info02 {
+          .topMenu {
+            .iconBox {
+              img {
+                width: 150%;
+                transform: translateX(-5px);
+              }
+            }
+          }
+          .contents {
+            overflow-y: scroll;
+            width: 100%;
+            height: calc(100% - 30px);
+            .projectList {
+              height: 100%;
+              width: 100%;
+              display: block;
+              li {
+                height: 100%;
+                width: 100%;
+                .left {
+                  width: 40%;
+                  height: 100%;
+                  float: left;
+                  position: relative;
+                  .txtBox {
+                    position: absolute;
+                    width: 80%;
+                    color: #fff;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    .title {
+                      margin-top: 15px;
+                    }
+                    .btns {
+                      margin-top: 30px;
+                      button {
+                        color: #fff;
+                        border: 1px solid #fff;
+                        width: 100px;
+                        padding: 10px 0;
+                        transition: 0.5s ease;
+                        &:hover {
+                          background-color: #fff;
+                          color: #333;
+                        }
+                      }
+                    }
+                  }
+                }
+                .right {
+                  width: 60%;
+                  height: 100%;
+                  float: left;
+                  position: relative;
+                  .projectImg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+                    width: 80%;
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+                &.project01 {
+                  .left {
+                    background-color: #000;
+                  }
+                  .right {
+                    background-color: rgb(255, 254, 221);
+                  }
+                }
+                &.project02 {
+                  .left {
+                    background-color: rgb(137, 139, 6);
+                  }
+                  .right {
+                    background-color: rgb(13, 67, 83);
+                  }
+                }
+                &.project03 {
+                  .left {
+                    background-color: rgb(155, 87, 9);
+                  }
+                  .right {
+                    background-color: rgb(79, 25, 206);
+                  }
+                }
+                &.project04 {
+                  .left {
+                    background-color: rgb(99, 4, 28);
+                  }
+                  .right {
+                    background-color: rgb(25, 206, 106);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .topMenu {
+          display: block;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          background-color: #d9d9d9;
+          border-bottom: 1px solid #000;
+          .iconBox {
+            height: 20px;
+            margin: 5px;
+            width: 20px;
+            float: left;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          h2 {
+            float: left;
+          }
+          .btnClose {
+            line-height: 30px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    #buttomMenu {
+      width: 100%;
+      height: 50px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      .menu {
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        display: block;
+        width: 100%;
+        background-color: #000;
+        .imgBox {
+          width: 50px;
+          height: 50px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .menuList {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 500px;
+        z-index: 98;
+        transition: 0.5s ease;
+        background-color: #2c2c2c;
+        &.menuOn {
+          top: -500px;
+        }
+        .iconList {
+          height: 100%;
+          .btns {
+            width: 50px;
+            height: 100%;
+            float: left;
+            z-index: 2;
+            background-color: #3c3c3c;
+            position: relative;
+            .btnBox {
+              position: absolute;
+              bottom: 0;
+              button {
+                display: block;
+                width: 50px;
+                height: 50px;
+                color: #fff;
+                text-align: center;
+                font-size: 2rem;
+              }
+            }
+          }
+          ul {
+            float: right;
+            width: 350px;
+            li {
+              color: #fff;
+              line-height: 80px;
+              height: 80px;
+              border-bottom: 1px solid #fff;
+              font-weight: 700;
+              cursor: pointer;
+              .imgBox {
+                width: 80px;
+                height: 80px;
+                float: left;
+                margin-right: 30px;
+                img {
+                  width: 90%;
+                  height: 90%;
+                }
+              }
+            }
+          }
+        }
+        .cogMenu {
+          position: absolute;
+          left: -400px;
+          top: 0;
+          background-color: rgb(155, 58, 58);
+          height: 100%;
+          width: calc(100% - 50px);
+          transition: 0.5s ease;
+          &.cogOn {
+            left: 50px;
+          }
+          ul {
+            width: 100%;
+            padding: 5px;
+            li {
+              width: 50%;
+              float: left;
+              padding: 5px;
+              height: 150px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+              .bgc {
+                width: 100%;
+                height: 100%;
+                background-color: #2af3c7;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rain {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      transform: rotate(45deg);
+      span {
+        display: block;
+        width: 10rem;
+        height: 0.1rem;
+        position: absolute;
+        left: -75%;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(255, 255, 255, 0.4) 100%
+        );
+        &.dropRain {
+          animation: drop 5s infinite linear;
+        }
+      }
+      .drop {
+        &:nth-child(1) {
+          top: 200px;
+        }
+        &:nth-child(2) {
+          top: 400px;
+        }
+        &:nth-child(3) {
+          top: 600px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes drop {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 150%;
+  }
+}

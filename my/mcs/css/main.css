@@ -1,0 +1,328 @@
+:root {
+  --main--color: #21b8ce;
+  --red--color: #f95157;
+}
+#mainVisual ul > li {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#mainVisual .visual01 {
+  background: url("../img/main_slider01.png") no-repeat 50%;
+  background-size: cover;
+}
+#mainVisual .visual02 {
+  background: url("../img/main_slider02.png") no-repeat 50%;
+  background-size: cover;
+}
+#mainVisual .visual03 {
+  background: url("../img/main_slider03.png") no-repeat 50%;
+  background-size: cover;
+}
+#mainVisual .visual04 {
+  background: url("../img/main_slider04.png") no-repeat 50%;
+  background-size: cover;
+}
+#mainVisual .visual01 .effect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#mainVisual .visual01 .effect img {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  transform: translateY(-60%);
+  transform-origin: center;
+}
+#mainVisual .visual01 .effect img:nth-child(1) {
+  animation: circle01 20s infinite linear;
+}
+#mainVisual .visual01 .effect img:nth-child(2) {
+  animation: circle02 20s infinite linear;
+}
+#mainVisual .visual01 .effect img:nth-child(3) {
+  animation: circle03 20s infinite linear;
+}
+
+#mainVisual .titleBox {
+  color: #fff;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 40%;
+  left: 15%;
+}
+#mainVisual .titleBox .sub {
+  font-size: 2rem;
+}
+#mainVisual .titleBox .main {
+  display: block;
+  padding: 20px 0 30px;
+  font-size: 3.5rem;
+}
+#mainVisual .titleBox p {
+  color: rgba(255, 255, 255, 0.7);
+}
+#mainVisual .visual01 .titleBox strong,
+#mainVisual .visual03 .titleBox strong {
+  color: #a2f2fe;
+}
+#mainVisual .visual02 .titleBox strong {
+  color: #e3e3bd;
+}
+#mainVisual .visual04 .titleBox strong {
+  color: #e3e3bd;
+  display: block;
+}
+#mainVisual .titleBox .btns .more {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px 15px;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+#mainVisual .mask .pagination {
+  position: absolute;
+  bottom: 35%;
+  left: 15%;
+  z-index: 2;
+}
+#mainVisual .mask .pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--main--color);
+  opacity: 1;
+  margin-right: 5px;
+}
+#mainVisual .mask .pagination .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+#mainVisual .mask .rain {
+  display: block;
+  height: 10px;
+  position: relative;
+  transform: rotate(45deg);
+}
+#mainVisual .mask .rain span {
+  display: block;
+  width: 10rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+#mainVisual .mask .rain .drop:nth-child(1) {top: 600px;}
+#mainVisual .mask .rain .drop:nth-child(2) {top: 400px;}
+#mainVisual .mask .rain .drop:nth-child(3) {top: 200px;}
+
+
+
+
+#mainVisual .mask .rain span.active {
+    animation: drop 5s infinite linear;
+}
+@keyframes drop {
+  100% {
+    left: 150%;
+  }
+}
+@keyframes circle01 {
+  0% {
+    transform-origin: 50%;
+    transform: translateY(-60%) rotate(360deg);
+  }
+}
+@keyframes circle02 {
+  0% {
+    transform-origin: 50%;
+    transform: translateY(-60%) rotate(-360deg);
+  }
+}
+@keyframes circle03 {
+  0% {
+    transform: translateY(-60%) rotate(360deg);
+  }
+}
+
+/*  */
+
+#business .bg {
+  width: 50%;
+  height: 100%;
+  background: url("../img/bg_section2.png") no-repeat 0;
+  float: left;
+  background-size: contain;
+}
+#business .txtBox {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background: url("../img/bg_section01.png") no-repeat 100% 100%;
+  float: left;
+}
+#business .txtBox .contents {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  padding-right: 80px;
+}
+#business .txtBox h2 {
+  text-align: center;
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#business .txtBox .list {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+#business .txtBox .list > li {
+  width: 25%;
+  float: left;
+}
+#business .txtBox .list > li.active a {
+  color: #fff;
+  background-color: #1a9eb1;
+  border: none;
+}
+#business .txtBox .list > li.active .listBox {
+  display: block;
+}
+#business .txtBox .list > li a {
+  text-align: center;
+  display: block;
+  width: 90%;
+  padding: 10px 0;
+  border: 1px solid #9b9b9b;
+  border-radius: 10px;
+}
+#business .txtBox .list > li .listBox {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+#business .txtBox .list > li .listBox span {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #9b9b9b;
+}
+#business .txtBox .list > li .listBox dt {
+  padding: 20px 0 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#business .txtBox .list > li .listBox dd {
+  line-height: 1.7;
+  font-size: 1.25rem;
+}
+#business .txtBox .listBox .imgBox {
+  width: 559px;
+  height: 446px;
+  position: absolute;
+  top: -75px;
+  left: -75%;
+  overflow: hidden;
+}
+#community {
+  background: url("../img/bg_section3.png") no-repeat;
+  background-size: cover;
+}
+#community h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+#community .contentList {
+margin-top: 50px;
+  width: 100%;
+  height: 415px;
+}
+#community .contentList > li {
+  float: left;
+  display: block;
+  height: 100%;
+  margin-left: 30px;
+  overflow: hidden;
+}
+#community .contentList > li:nth-child(1) {
+  width: calc(40% - 30px);
+  background: #fff;
+}
+#community .contentList > li:nth-child(2) {
+  width: calc(30% - 30px);
+  background: #218397;
+}
+#community .contentList > li:nth-child(3) {
+  width: calc(30% - 30px);
+}
+#community .contentList>li>div{
+    padding: 30px;
+}
+#community .contentList>li .info{
+    background: #1d66b9;
+    width: 100%;
+    height: 47.5%;
+    margin-bottom: 5%;
+}
+#community .contentList>li .question{
+    background: #1d84b9;
+    width: 100%;
+    height: 47.5%;
+}
+#community .contentList>li dl{
+    color: #fff;
+}
+#community .contentList>li dt{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#community .contentList>li dd{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#community .contentList>li dd img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#community .contentList>li .imgBox{
+    float: left;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+#community .contentList .notice .txtBox ul>li{
+  padding: 0 30px;
+}
+
+#community .contentList .notice .txtBox .title{
+  font-size: 28px;
+  margin-top: 30px;
+}
+#community .contentList .notice .txtBox p{
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow : ellipsis;
+  height: 100px;
+  width: 410px;
+  margin-bottom: 30px;
+  line-clamp: 3;
+}
+
+
+
+.swiper-notification {
+  display: none !important;
+}

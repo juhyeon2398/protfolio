@@ -1,0 +1,85 @@
+#mainVisual {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#mainVisual video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#mainVisual .txtBox {
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+}
+
+#mainVisual .txtBox .main {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+#mainVisual .txtBox .main strong {
+  font-weight: 700;
+  display: block;
+}
+
+#mainVisual .txtBox a {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 15px 80px 15px 30px;
+  background: url("../images/arrow.png") no-repeat right 30px top 50%;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+#mainVisual .txtBox a:hover {
+  background-color: #6700ff;
+  background-position: right 15px top 50%;
+  border-color: #6700ff;
+}
+
+#quickMenu .fList li {
+  width: 25%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#quickMenu .fList li a:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+#quickMenu .fList li img {
+  width: 100%;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+#quickMenu .fList li .txtBox {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#quickMenu .fList li .txtBox .main {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=main.css.map */

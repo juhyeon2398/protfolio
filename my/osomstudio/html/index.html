@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="../css/fullpage.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/respons.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script defer src="../js/tilt.jquery.js"></script>
+    <script defer src="../js/main.js"></script>
+    <title>Osomstudio</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo">
+        <div class="logoBox">
+          <img src="../img/osomstudio-logo2.svg" class="black" alt="" />
+          <img src="../img/logo_white.svg" class="white" alt="" />
+        </div>
+      </h1>
+      <nav id="gnb">
+        <h2 class="hidden">global navigation</h2>
+        <ul class="clearFix">
+          <li><a href="">About us</a></li>
+          <li><a href="">What we do?</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Career</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Polski</a></li>
+        </ul>
+      </nav>
+      <button class="order">Order a quote</button>
+    </header>
+    <div id="navBar">
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <section id="mainVisual" class="section">
+      <div class="container clearFix">
+        <div class="titleBox">
+          <h2>
+            <span class="main"
+              >We build brands,<br />
+              relations and <br />
+              trust</span
+            >
+            <p>
+              We are the answer for both the individual needs <br />of clients
+              as well as complete projects - from<br />
+              idea to execution.
+            </p>
+          </h2>
+          <div class="btns red hover">
+            <button class="order">Order a quote</button>
+          </div>
+        </div>
+        <video src="../img/main_video.mp4" muted autoplay loop></video>
+      </div>
+      <div id="orderPage">
+        <div class="left">
+          <h2>
+            <span class="main">
+              Let’s get to work<br />
+              on a common project!
+            </span>
+            <span class="sub"
+              >Fill out the form below or send e-mail to us.</span
+            >
+          </h2>
+          <div class="inputBox">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="text" placeholder="E-mail adress" />
+            <input type="text" placeholder="Phone number" />
+          </div>
+          <div class="checkBox">
+            <span>What range of services are you interested in?</span>
+            <label
+              ><input type="checkbox" name="" id="" />Design and branding</label
+            >
+            <label><input type="checkbox" name="" id="" />Marketing</label>
+            <label
+              ><input type="checkbox" name="" id="" />Web development</label
+            >
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="How can we help you?"
+          ></textarea>
+          <div class="btns red">
+            <button class="send">Send</button>
+          </div>
+          <label class="privacy"
+            ><input type="checkbox" name="" id="" />Personal data provided in
+            the form will be processed in order to prepare and present the
+            valuation, and their only administrator will be OSOM STUDIO Sp. z
+            o.o. based in Łódź. Details:
+            <a href="">privacy policy OSOM STUDIO Sp. z o. o.</a></label
+          >
+        </div>
+        <div class="right">
+          <div class="contents">
+            <h2>
+              <span class="sub">Testimonials</span>
+              <span class="main"
+                >„We're excited about their knowledge and friendliness."</span
+              >
+            </h2>
+            <div class="mainIcon">
+              <img src="../img/right_icon01.png" alt="" />
+              <p>
+                <span class="main">Bettina Eberhard</span>
+                Kodak Alaris
+              </p>
+            </div>
+            <div class="listBox">
+              <span class="main"
+                >Marketing Manager, Kodak Alaris Germany GmbH</span
+              >
+              <ul>
+                <li><img src="../img/logo14.png" alt="" /></li>
+                <li><img src="../img/logo15.png" alt="" /></li>
+                <li><img src="../img/logo13.png" alt="" /></li>
+                <li><img src="../img/logo12.png" alt="" /></li>
+                <li><img src="../img/logo7.png" alt="" /></li>
+                <li><img src="../img/logo8.png" alt="" /></li>
+                <li><img src="../img/logo11.png" alt="" /></li>
+                <li><img src="../img/logo10.png" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="close">
+            <button><i class="xi-close"></i></button>
+          </div>
+        </div>
+      </div>
+      <div id="nav">
+        <div class="txtBox">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">What we do?</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Career</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+          <div class="adress">
+            <dl>
+              <dt>GET IN TOUCH</dt>
+              <dd>OSOM Studio</dd>
+              <dd>Jaracza 47 lok. 7, 90-249 Lodz</dd>
+              <dd>sMokotowska 1, 00-640 Warszawa</dd>
+            </dl>
+            <a href="">office@osomstudio.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="supporter" class="section auto blue">
+      <div class="container clearFix">
+        <div class="titleBox">
+          <strong>
+            We help brands<br />
+            make money<br />
+            online.<br />
+          </strong>
+          <span>
+              Interaction is our <br />
+              middle name!
+          </span>
+        </div>
+        <div class="txtBox">
+          <p>
+            <span>
+              We support our clients’ online presence and expertly implement
+              sales and promotion strategies. We believe in the power of online
+              marketing and center all our interactive services around it.
+            </span>
+            <span>
+                We are the answer for both the individual needs of clients as well
+                as complete projects - from idea to execution. OSOM STUDIO will help
+                you gain a competitive advantage, significantly improve the
+                visibility of your brand online and attract new clients.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="logos">
+        <ul></ul>
+      </div>
+    </section>
+    <section id="projects" class="section auto blue">
+      <div class="container">
+        <div class="titleBox">
+          Take a look at <br />
+          some <strong>osom</strong><br />
+          projects.
+        </div>
+        <div class="projectBox">
+          <div class="left clearFix">
+            <div class="project01 project" data-tilt>
+              <a href="">
+                <h2>
+                  <span class="sub">Smart Schedules</span>
+                  <span class="main"
+                    >Faster information for<br />
+                    passengers in real time</span
+                  >
+                </h2>
+                <div class="imgBox">
+                  <img src="../img/project_01_1.png" alt="" /><img
+                    src="../img/project_01_2.png"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project02 project" data-tilt>
+              <a href="">
+                <h2>
+                  <span class="sub">Netwise</span>
+                  <span class="main"
+                    >CRM Solutions and<br />
+                    Services</span
+                  >
+                </h2>
+                <div class="imgBox">
+                  <img src="../img/project_02_1.png" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="right clearFix">
+            <div class="project03 project" data-tilt>
+              <a href="">
+                <h2>
+                  <span class="sub">Drewnowska 77</span>
+                  <span class="main">Catalog<br />of apartments</span>
+                </h2>
+                <div class="imgBox">
+                  <img src="../img/project_03_1.png" alt="" /></div
+              ></a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="project04 project" data-tilt>
+              <a href="">
+                <h2>
+                  <span class="sub">La perla</span>
+                  <span class="main">Aesthetic medicine <br />clinic</span>
+                </h2>
+                <div class="imgBox">
+                  <img src="../img/project_04_1.png" alt="" />
+                  <img src="../img/project_04_2.png" alt="" /></div
+              ></a>
+            </div>
+          </div>
+          <div class="btns red hover">
+            <button>more projects</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bg" class="section"></section>
+    <section class="section" id="what">
+      <div class="container">
+        <div class="contents">
+          <h2>What can we do for you?</h2>
+          <div class="txtBox clearFix">
+            <span class="first"
+              >Our offer covers a wide range of services which will help you<br />
+              capture the attention and the hearts of your audience.</span
+            >
+            <span class="second"
+              >We speak to emotions and multiply conversions, reach and profits
+              - we<br />
+              help your dreams take flight.</span
+            >
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                <img src="../img/list_icon01.svg" alt="" />
+                <p>
+                  <span class="main">Design i branding</span>
+                  <span class="sub"
+                    >Check out our creative ways of showing your brand on the
+                    internet.</span
+                  >
+                </p>
+                <a href="" class="seeMore">See more</a>
+              </li>
+              <li>
+                <img src="../img/list_icon02.svg" alt="" />
+                <p>
+                  <span class="main">Marketing</span>
+                  <span class="sub"
+                    >Increase your sales thanks to our services tailor-made to
+                    your clients’ need.</span
+                  >
+                </p>
+                <a href="" class="seeMore">See more</a>
+              </li>
+              <li>
+                <img src="../img/list_icon03.svg" alt="" />
+                <p>
+                  <span class="main">Web Development </span>
+                  <span class="sub">
+                    Choose proven technologies, ensuring unlimited possibilities
+                    of developing your site.
+                  </span>
+                </p>
+                <a href="" class="seeMore">See more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section auto" id="wave">
+      <div class="img"></div>
+      <div class="contents">
+        <h2>
+          <span class="main">Let’s do this!</span>
+          <span class="sub">Let’s get to work on a common project!</span>
+        </h2>
+        <p>
+          You’re curious what we can do for your business? You want to benefit
+          from online marketing or you<br> need graphic design services in your
+          company? You plan to open an <br>online store carry out an adwords
+          campaign?
+        </p>
+        <div class="btns blue hover">
+          <button>Write to us</button>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+        <div class="container clearFix">
+            <h2><img src="../img/logo-white.svg" alt=""></h2>
+            <ul class="clearFix">
+                <li>
+                    <dl>
+                        <dt>SEE ALSO:</dt>
+                        <dd>
+                            <a href="">About us</a>
+                        </dd>
+                        <dd>
+                            <a href="">What we do?</a>
+                        </dd>
+                        <dd>
+                            <a href="">Projects</a>
+                        </dd>
+                        <dd>
+                            <a href="">Career</a>
+                        </dd>
+                        <dd>
+                            <a href="">Contact</a>
+                        </dd>
+                        <dd>
+                            <a href="">Company details</a>
+                        </dd>
+                        <dd>
+                            <a href="">Privacy Policy</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>STAY INFORMED:</dt>
+                        <dd>
+                            <a href="">Facebook</a>
+                        </dd>
+                        <dd>
+                            <a href="">Instagram</a>
+                        </dd>
+                        <dd>
+                            <a href="">Linkedin</a>
+                        </dd>
+                        <dd>
+                            <a href="">Behance</a>
+                        </dd>
+                        <dd>
+                            <a href="">Clutch</a>
+                        </dd>
+                        <dd>
+                            <a href="">Dribbble</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>CONTACT US:</dt>
+                        <dd>OSOM Studio Sp. z o.o.</dd>
+                        <dd>Jaracza 47, lokal 7, 90-249 Łódź</dd>
+                        <dd>Mokotowska 1, 00-640 Warszawa</dd>
+                        <dd class="email"><a href="">office@osomstudio.com</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#main .computer {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  background: url("../image/bg01.jpg") no-repeat 50% 100%;
+  background-size: cover;
+}
+
+#main .computer .inner {
+  display: block;
+  height: 100%;
+}
+
+#main .computer .inner .iconList {
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 5%;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  font-weight: 700;
+}
+
+#main .computer .inner .iconList li {
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+#main .computer .inner .iconList li span {
+  margin-top: 10px;
+  display: block;
+}
+
+#main .computer .inner .iconList li .imgBox {
+  widows: 95px;
+  height: 50px;
+}
+
+#main .computer .inner .iconList li .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .computer .inner .info {
+  display: none;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 90;
+  overflow: hidden;
+  border: 1px solid #000;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+#main .computer .inner .info.active {
+  display: block;
+}
+
+#main .computer .inner .info.info01 .contentBox {
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #e7d31d;
+}
+
+#main .computer .inner .info.info01 .contentBox .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#main .computer .inner .info.info01 .contentBox .content .photo {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  overflow: hidden;
+  float: left;
+  background-color: #fff;
+}
+
+#main .computer .inner .info.info01 .contentBox .content .photo img {
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+}
+
+#main .computer .inner .info.info01 .contentBox .content .txt {
+  left: 125%;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#main .computer .inner .info.info01 .contentBox .content .txt h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#main .computer .inner .info.info02 .topMenu .iconBox img {
+  width: 150%;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+#main .computer .inner .info.info02 .contents {
+  overflow-y: scroll;
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+#main .computer .inner .info.info02 .contents .projectList {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li {
+  height: 100%;
+  width: 100%;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left {
+  width: 40%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox {
+  position: absolute;
+  width: 80%;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .title {
+  margin-top: 15px;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns {
+  margin-top: 30px;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns button {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100px;
+  padding: 10px 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .right {
+  width: 60%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .right .projectImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  width: 80%;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .right .projectImg img {
+  width: 100%;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project01 .left {
+  background-color: #000;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project01 .right {
+  background-color: #fffedd;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project02 .left {
+  background-color: #898b06;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project02 .right {
+  background-color: #0d4353;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project03 .left {
+  background-color: #9b5709;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project03 .right {
+  background-color: #4f19ce;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project04 .left {
+  background-color: #63041c;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li.project04 .right {
+  background-color: #19ce6a;
+}
+
+#main .computer .inner .info .topMenu {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #000;
+}
+
+#main .computer .inner .info .topMenu .iconBox {
+  height: 20px;
+  margin: 5px;
+  width: 20px;
+  float: left;
+}
+
+#main .computer .inner .info .topMenu .iconBox img {
+  height: 100%;
+  width: 100%;
+}
+
+#main .computer .inner .info .topMenu h2 {
+  float: left;
+}
+
+#main .computer .inner .info .topMenu .btnClose {
+  line-height: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#main .computer #buttomMenu {
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#main .computer #buttomMenu .menu {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background-color: #000;
+}
+
+#main .computer #buttomMenu .menu .imgBox {
+  width: 50px;
+  height: 50px;
+}
+
+#main .computer #buttomMenu .menu .imgBox img {
+  width: 100%;
+}
+
+#main .computer #buttomMenu .menuList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  z-index: 98;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #2c2c2c;
+}
+
+#main .computer #buttomMenu .menuList.menuOn {
+  top: -500px;
+}
+
+#main .computer #buttomMenu .menuList .iconList {
+  height: 100%;
+}
+
+#main .computer #buttomMenu .menuList .iconList .btns {
+  width: 50px;
+  height: 100%;
+  float: left;
+  z-index: 2;
+  background-color: #3c3c3c;
+  position: relative;
+}
+
+#main .computer #buttomMenu .menuList .iconList .btns .btnBox {
+  position: absolute;
+  bottom: 0;
+}
+
+#main .computer #buttomMenu .menuList .iconList .btns .btnBox button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#main .computer #buttomMenu .menuList .iconList ul {
+  float: right;
+  width: 350px;
+}
+
+#main .computer #buttomMenu .menuList .iconList ul li {
+  color: #fff;
+  line-height: 80px;
+  height: 80px;
+  border-bottom: 1px solid #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#main .computer #buttomMenu .menuList .iconList ul li .imgBox {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 30px;
+}
+
+#main .computer #buttomMenu .menuList .iconList ul li .imgBox img {
+  width: 90%;
+  height: 90%;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu {
+  position: absolute;
+  left: -400px;
+  top: 0;
+  background-color: #9b3a3a;
+  height: 100%;
+  width: calc(100% - 50px);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu.cogOn {
+  left: 50px;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu ul {
+  width: 100%;
+  padding: 5px;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu ul li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  height: 150px;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .computer #buttomMenu .menuList .cogMenu ul li .bgc {
+  width: 100%;
+  height: 100%;
+  background-color: #2af3c7;
+}
+
+#main .computer .rain {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#main .computer .rain span {
+  display: block;
+  width: 10rem;
+  height: 0.1rem;
+  position: absolute;
+  left: -75%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+#main .computer .rain span.dropRain {
+  -webkit-animation: drop 5s infinite linear;
+          animation: drop 5s infinite linear;
+}
+
+#main .computer .rain .drop:nth-child(1) {
+  top: 200px;
+}
+
+#main .computer .rain .drop:nth-child(2) {
+  top: 400px;
+}
+
+#main .computer .rain .drop:nth-child(3) {
+  top: 600px;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 150%;
+  }
+}

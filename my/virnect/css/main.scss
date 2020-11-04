@@ -1,0 +1,72 @@
+#mainVisual {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    video {
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .txtBox {
+        position: absolute;
+        top:50%;
+        left:200px;
+        transform: translateY(-50%);
+        color:#fff;
+        .main {
+            font-size: 48px;
+            color:#fff;
+            font-weight: 100;
+            margin-bottom: 30px;
+            strong {
+                font-weight: 700;
+                display: block;
+            }
+        }
+        a {
+            border: 1px solid #fff;
+            display: inline-block;
+            padding:15px 80px 15px 30px;
+            background:url("../images/arrow.png") no-repeat right 30px top 50%;
+            transition: 0.25s ease;
+            &:hover {
+                background-color: #6700ff;
+                background-position: right 15px top 50%;
+                border-color: #6700ff;
+            }
+        }
+    }
+}
+
+#quickMenu {
+    .fList {
+        li {
+            width:25%;
+            color:#fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            a:hover img {
+                transform: scale(1.25);
+            }
+            img {
+                width:100%;
+                transition: 0.25s ease;
+            }
+            .txtBox {
+                position: absolute;
+                width:100%;
+                top:50%;
+                transform: translateY(-50%);
+                .main {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
