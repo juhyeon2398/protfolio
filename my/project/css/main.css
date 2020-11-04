@@ -183,8 +183,16 @@
   transition: 0.5s ease;
 }
 
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns button a {
+  color: #fff;
+}
+
 #main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns button:hover {
   background-color: #fff;
+  color: #333;
+}
+
+#main .computer .inner .info.info02 .contents .projectList li .left .txtBox .btns button:hover a {
   color: #333;
 }
 
