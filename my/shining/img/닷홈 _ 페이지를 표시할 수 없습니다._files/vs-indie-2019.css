@@ -1,0 +1,137 @@
+/*웹폰트*/
+@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); 
+	
+body{
+    min-height: 900px;
+    font-family: 'Noto Sans KR', 'Nanum Barun Gothic', sans-serif !important; 
+    font-weight:400;
+    line-height:1.6 ;
+    letter-spacing:-0.02em;
+    color:#777;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Noto Sans KR', 'Nanum Barun Gothic', sans-serif !important; 
+    letter-spacing:-0.02em;
+    color:#555;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+p{word-break: keep-all;}
+ul li{word-break: keep-all;}
+
+.bg-white{background:#fff; color:#333; padding:0 5px; border-radius:5px; border:1px solid #0070c0;}
+.c898989{color:#555 !important;}
+.cDothome{color:#0070c0 !important;}
+.cRed{color: #d82102;}
+/*----------------------------------------------*/
+
+/*vs점보*/
+.vs-jumbo{border-radius:0px !important;  margin:105px 0 0; padding: 20px 0 0;}
+.vs-jumbo p{font-size:18px; font-weight: 400;padding:15px 0;border-top:0px solid #ccc; line-height:1.6 ;}
+.vs-jumbo h2{padding: 0 0 10px; word-break: keep-all; font-size:25px;}
+.vs-jumbo h1{ margin-top: 40px; font-size: 53px; font-weight: 600; word-break: keep-all; line-height:63px;}
+.vs-jumbo>h1 img, .vs-jumbo>h1 span {vertical-align: middle;}
+.vs-jumbo .col-md-4 {text-align: center; }
+.vs-jumbo-btm{background: transparent; padding:80px 0 0!important; margin-bottom:40px;}
+.top{background: #f0f4f6; min-height:630px;}
+.dot_logo_con{text-align: center}
+.vs-jumbo h1 img{width: 62px}
+
+.vs-jumbo .btn-default, .info .btn-default{background: #0070c0; border: 1px solid #0070c0; color: #fff; font-size: 18px; transition: all .2s}
+.vs-jumbo .btn-default:hover, .info .btn-default:hover{background: none; color: #0070c0; border-color: #5ca3cf}
+
+
+/*info */
+.info {padding: 30px 15px 30px;}
+.info p{font-size:16px; font-weight: 400;padding:15px 0;border-top:0px solid #ccc; line-height:1.6; margin-bottom:0px;}
+.info p b{ display: inline-block; margin-bottom: 5px}
+.info ul {list-style: none; width: 48%; display: inline-block; padding-left: 0; vertical-align: top}
+.info ul li{font-size: 18px;}
+
+/* 페이지별 여백 수정*/
+.start_free .top .vs-jumbo,.traffic .top .vs-jumbo, .start_linux .top .vs-jumbo, .warning_admin .top .vs-jumbo{margin:45px 0 0;}
+.start_unlimited .top .vs-jumbo{margin:5px 0 35px;}
+.start_unlimited .top .vs-jumbo .col-md-4 {margin-top: 85px;}
+.start_linux .top .vs-jumbo .col-md-4 {margin-top: 55px;}
+.start_linux .top .vs-jumbo {margin-bottom: 20px}
+.start_free .top .vs-jumbo .col-md-4 {margin-top: 80px;}
+.traffic .top .vs-jumbo .col-md-4  {margin-top: 60px}
+.traffic .info{margin-bottom: 20px}
+.warning .top .vs-jumbo{margin:75px 0 0}
+.expiration .vs-jumbo{margin:90px 0 0}
+
+
+/*배너*/
+.linkbox{padding:20px 15px; text-align:center;}
+.vs-indie-bannerbox div .banners a{text-decoration:none;color:#333;}
+.vs-indie-bannerbox div .banners a:hover{text-decoration:none;color:#333;}
+a.vs-aLink-area2{display:block;}
+
+.banners {border:1px solid #ddd!important; border-radius:5px; background: #e4e7ec;}
+.banners .row{margin-bottom: 10px}
+.banners .col-xs-8 p{font-size: 16px;font-weight: 400;line-height: 22px;margin:10px 0 0 0;}
+.banners  .col-xs-8 h3{font-weight: 600; margin-bottom:0; line-height:26px;}
+
+.banners .col img {width: 100%; max-width:70px; margin:0 0 3px 5px;}
+.banners .col{padding:0!important;}
+.banners .col p{font-size: 16px;font-weight: 400;line-height: 22px;margin:10px 0 0 0;}
+.banners  .col h3{font-weight: 600; margin-bottom:0; line-height:26px;}
+
+.banners h3 {margin-top:0; margin-bottom:0;}
+.banners .text_center{text-align:center}
+.banners .col-xs-4 img {width: 100%; max-width: 80px}
+
+
+
+.banners>a>.linkbox>.row{margin:0px;}
+.logo-area{min-width:200px; max-width:200px; margin-left:50%; transform:translateX(-50%); margin-bottom:35px;}
+.logo-area img{max-width:33px; margin:7px 0 0 10px; float:left;}
+
+.gray_link{display:block; padding:5px 0; color:#666; font-size:22px; line-height:18px;}
+.gray_link:hover{text-decoration:none!important;}
+.url-dothome{font-size:14px; }
+.url-dothome:hover{text-decoration:underline!important;}
+
+@media (max-width: 1200px) {
+    .vs-jumbo-btm{padding:79px 0 0!important;}
+    .vs-jumbo .col-md-4 img{margin-top: 50px}
+    .banners .col-xs-8 h3{font-size:23px;}
+    .banners .col-xs-8 p{font-size:14px;}
+}
+@media (max-width: 992px) {
+    .vs-jumbo-btm{padding:45px 0 0!important;}
+    .vs-jumbo .col-md-4 {float: none;}
+    .vs-jumbo .col-md-4 img{width: 400px; margin-top: 0;}
+    .start_linux .top .vs-jumbo .col-md-4, .start_unlimited .top .vs-jumbo .col-md-4, .expiration .top .vs-jumbo .col-md-4, .start_free .top .vs-jumbo .col-md-4, .traffic .top .vs-jumbo .col-md-4 {margin-top:0;}
+    .banners .col-xs-8 h3{font-size:24px;}
+    .banners .col-xs-8 p{font-size:16px;}
+}
+@media (max-width: 767px) {
+    .start_unlimited .top .vs-jumbo{margin:55px 0 35px;}
+    .c898989 img {width:45px; } 
+    .vs-jumbo h1{font-size: 42px;}
+    .vs-jumbo {text-align: center}
+    .vs-jumbo h2{font-size: 22px}
+    .vs-jumbo p{font-size: 16px}
+    .vs-jumbo h1 img{width: 45px}
+    .traffic .info{margin-bottom: 10px}
+    .expiration .vs-jumbo{margin-bottom: 0}
+    .vs-jumbo {margin-bottom: 0}
+}
+@media (max-width: 576px) {
+    .vs-jumbo{margin:80px 0 0}
+    .vs-jumbo > div{padding:0;}
+    .vs-jumbo h1{font-size: 32px; line-height:40px;}
+    .vs-jumbo h2{font-size: 20px; margin-top:0;}
+    .banners .col-xs-3, .banners .col-xs-9{width: 100%;}
+    .banners .col-xs-3 {padding-right: 15px}
+    .banners .col-xs-3 img{width: 80px;}
+    .banners .col-xs-9 p, .banners .col-xs-9 h3{text-align: center}
+    .vs-jumbo .col-md-4 img {width: 80%}
+    .vs-jumbo h1{margin-top: 0}
+    .info ul {width: 100%; margin: 0}
+}
+
+
+
